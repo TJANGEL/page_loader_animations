@@ -49,3 +49,10 @@ body {
 .btn:hover {
   opacity: 0.9;
 }
+
+/* .btn:active {
+  color: red;
+} */
+a.active {
+  background: palevioletred;
+}
