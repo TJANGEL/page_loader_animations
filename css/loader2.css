@@ -1,0 +1,12 @@
+.loader {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 40px;
+  color: palevioletred;
+}
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
