@@ -42,17 +42,20 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin-top: 15px;
+  margin-right: 5px;
+  align-items: center;
 }
 
 .btn:hover {
   opacity: 0.9;
+  color: palevioletred;
+}
+.btn.active {
+  background: palevioletred;
 }
 
-/* .btn:active {
-  color: red;
-} */
-a.active {
-  background: palevioletred;
+.btn.active:hover {
+  color: purple;
 }
