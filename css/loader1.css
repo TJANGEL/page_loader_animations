@@ -1,14 +1,35 @@
 .loader {
   height: 50px;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
 }
 
 .circle {
+  display: inline-block;
   background: purple;
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  animation: grow 1.5s linear infinite;
+  transform: scale(0);
+  margin: -10px;
 }
 
 .circle:nth-child(2) {
   background: palevioletred;
+  animation-delay: 0.75s;
+}
+
+/* rotation animation of circles */
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* grow and shrink animation of circles */
+@keyframes grow {
+  50% {
+    transform: scale(1);
+  }
 }
